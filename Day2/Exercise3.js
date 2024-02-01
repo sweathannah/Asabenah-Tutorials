@@ -8,6 +8,7 @@ const sentenc = '%I $am@% a %tea@cher%, &and& I lo%#ve %te@a@ching%;. The@re $is
 let inequalities = /[@#$%&;]/g;
 console.log (sentenc.replace (inequalities, ""));
 
+
 let earns = 'He earns 5000 euro from salary per month, 10000 euro annual bonus, 15000 euro online courses per month.'
 let extract = "/\d+/gi;"
 let a = earn.match(extract);

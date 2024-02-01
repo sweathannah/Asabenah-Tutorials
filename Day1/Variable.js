@@ -56,11 +56,12 @@ console.log( age );
 console.log( isMarried );
 
 let name="sultanat", job="Student", lives="Nigeria";
-console.log(name, job, lives);
+console.log(name, job, lives)
 
 let myAge = "I am 16 years old.";
 console.log(myAge);
 let yourAge = "You are 30 years old.";
 console.log(yourAge)
+
 
  
