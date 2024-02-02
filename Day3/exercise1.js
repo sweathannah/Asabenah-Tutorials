@@ -51,4 +51,3 @@ let secondsSince1970 = Math.floor(millisecondsSince1970 / 1000);
 
 console.log(`${date}/${month}/${year} ${hours}:${minutes}`) 
 console.log("Seconds elapsed from January 1, 1970, to now:", secondsSince1970);
-
