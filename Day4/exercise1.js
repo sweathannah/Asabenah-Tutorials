@@ -24,10 +24,10 @@ if (a > b){
     console.log(`${a} is less than ${b}.`);
 }
 
-// let (4>3) = true;
-//     (4 > 3)
-//       ? console.log( '4 is greater than 3' )
-//       : console.log( '3 is less than 4' );
+let result = a > b ? 
+    'a is greater than b' 
+    : 'a is less than or equal to b';
+console.log(result);
 
 const number = prompt("whats number do you wish to know if its even or odd");
 if(+number%2===0){
@@ -35,3 +35,7 @@ if(+number%2===0){
 }else{
     alert( `${number} is an 0dd number`)
 }
+
+
+
+
