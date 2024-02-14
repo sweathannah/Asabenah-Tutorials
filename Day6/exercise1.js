@@ -131,11 +131,22 @@ for (let i = 0; i < 5; i++) {
     randomNumbers.push(randomNumber);
 }console.log("Array of 5 random numbers:", randomNumbers);
 
+        //Develop a small script which generate a six characters random id:
 let characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 let randomId = '';
 for (let i = 0; i < 6; i++) {
     let randomIndex = Math.floor(Math.random() * characters.length);
     randomId += characters.charAt(randomIndex);
 }console.log("Random six-character ID:", randomId);
+
+        //Develop a small script which generate array of 5 random numbers and the numbers must be unique
+let uniqueNum = [];
+for (let i = 0; uniqueNum.length < 5; i++) {
+    let ranNum;
+    do {
+        let ranNum = Math.floor(Math.random() * 100) + 1;
+    } while (uniqueNum.includes(ranNum));
+    uniqueNum.push(ranNum);
+}console.log("Unique Random Numbers:", uniqueNum);
 
 
