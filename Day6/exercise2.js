@@ -67,4 +67,55 @@ console.log(countriesArray);
 
 //In above countries array, check if there is a country or countries containing the word 'land'. If there are countries containing 'land', print it as array. If there is no country containing the word 'land', print 'All these countries are without land'.
 let countriesWithLand = [];
+countries.forEach(country => {
+    if (country.toLowerCase().includes('land')) {
+        countriesWithLand.push(country);
+    }
+});
+if (countriesWithLand.length > 0) {
+    console.log(countriesWithLand);
+} else {
+    console.log('All these countries are without land');
+}
 
+let countriesWithIa = [];
+countries.forEach(countries => {
+    if (countries.toLowerCase().endsWith('ia')){
+        countriesWithIa.push(countries);
+    }
+});
+if (countriesWithIa.length > 0) {
+    console.log(countriesWithIa);
+}else {
+    console.log('All these countries are without land');
+}
+
+let countriesWithMaxCharacters = '';
+let maxnumber = 0;
+countries.forEach(country => {
+    if (countries.length > maxnumber){
+        maxnumber = countries.length;
+        countriesWithMaxCharacters = country;
+    }
+});
+console.log("Country with the maximum number of characters:", countriesWithMaxCharacters);
+
+ let countriesWithFiveCharacters = '';
+let characters = 5;
+countries.forEach(countries => {
+    if (countries.length === characters) {
+        characters = countries.length;
+        countriesWithFiveCharacters = countries
+    }
+});console.log('country containing only 5 characters.', countriesWithFiveCharacters);
+
+
+const webTechs = [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Redux',
+    'Node',
+    'MongoDB'
+  ]
